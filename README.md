@@ -32,37 +32,64 @@ The program lets a user:
 - Input checking for deposits, withdrawals, and account numbers.
 - Uses string handling for account holder details.
 
-## ▶️ How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/banking-application.git
-   cd banking-application
-   ```
-2. Compile the program:
-   ```bash
-   javac BankingApplication.java
-   ```
-3. Run the program:
-   ```bash
-   java BankingApplication
-   ```
+ATTRIBUTES AND METHODS FOR MY ACCOUNT CLASS
+Attributes
 
-## Project Structure
-```
-BankingApplication.java    # Main class
-Account.java               # Account class
-UserInterface.java         # User interface class
-```
+accountNumber → Unique account number for each account.
 
-##  What I Learned
-- How to use Java basics (data types, loops, if-else, etc.).
-- How to work with arrays and strings in a real program.
-- How to make a small project menu-driven.
-- How to upload and manage code on GitHub.ependency Management
+accountHolderName → Name of the account holder.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here]
+balance → Stores current account balance.
 
+email → Registered email address.
 
+phoneNumber → Registered phone number.
 
+METHODS
+Methods
 
+Constructor → Initializes account with number, name, initial deposit, email, and phone.
 
+deposit(double amount) → Deposits money into the account.
+
+withdraw(double amount) → Withdraws money if balance is sufficient.
+
+displayAccountDetails() → Displays account details.
+
+updateContactDetails(String email, String phone) → Updates email and phone number.
+
+getAccountNumber() → Returns account number.
+
+main(String[] args) → Demonstrates account creation, deposit, withdrawal, and display operations.
+
+USERINTERFACE CLASS ATTRIBUTES AND METHODS
+
+ATTRIBUTES
+Attributes
+
+accounts → Array to store up to 50 Account objects.
+
+accountCount → Tracks the number of accounts created.
+
+nextAccountNumber → Stores the next account number (starts from 1001).
+
+sc → Scanner object for user input.
+
+METHODS
+Methods
+
+createAccount() → Creates a new account with name, deposit, email, and phone.
+
+findAccount(int accNo) → Searches and returns an account by account number.
+
+performDeposit() → Deposits money into a given account.
+
+performWithdrawal() → Withdraws money from a given account.
+
+showAccountDetails() → Displays details of a specific account.
+
+updateContact() → Updates email and phone number of an account.
+
+mainMenu() → Provides the main menu for user interactions.
+
+main(String[] args) → Entry point of the program, launches the main menu.
